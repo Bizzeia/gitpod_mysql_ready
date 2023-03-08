@@ -27,3 +27,18 @@ mycursor.execute("SHOW DATABASES")      #ti mostra tutti i database nel sistema
 
 for x in mycursor:
   print(x)
+
+
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="",                          
+  database="animali"                    #ti connette al server inserito
+)
+
+
+
+mycursor.execute("CREATE TABLE customers (id INT primary key auto_increment, name VARCHAR(324), address VARCHAR(234))")  
+
+                ("ALTER TABLE customers ADD COLUMN surname VARCHAR(213)")
