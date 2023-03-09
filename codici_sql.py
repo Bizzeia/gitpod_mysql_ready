@@ -41,4 +41,4 @@ mydb = mysql.connector.connect(
 
 mycursor.execute("CREATE TABLE customers (id INT primary key auto_increment, name VARCHAR(324), address VARCHAR(234))")  
 
-                ("ALTER TABLE customers ADD COLUMN surname VARCHAR(213)")
+mycursor.execute("ALTER TABLE customers ADD COLUMN surname VARCHAR(213)")
